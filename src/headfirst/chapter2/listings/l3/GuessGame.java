@@ -10,49 +10,32 @@ public class GuessGame {
         p2 = new Player();
         p3 = new Player();
 
-        int guessP1 = 0;
-        int guessP2 = 0;
-        int guessP3 = 0;
-
-        boolean p1IsRight = false;
-        boolean p2IsRight = false;
-        boolean p3IsRight = false;
-
         int targetNumber = (int) (Math.random() * 10);
         while (true) {
             System.out.println("The number to guess is " + targetNumber);
 
             p1.guess();
-            p2.guess();
-            p3.guess();
-
-            guessP1 = p1.number;
-            System.out.println("The first player thinks the number is " + guessP1);
-            guessP2 = p2.number;
-            System.out.println("The second player thinks the number is " + guessP2);
-            guessP3 = p3.number;
-            System.out.println("The third player thinks the number is " + guessP3);
-
-            if (guessP1 == targetNumber) {
-                p1IsRight = true;
-            }
-            if (guessP2 == targetNumber) {
-                p2IsRight = true;
-            }
-            if (guessP3 == targetNumber) {
-                p3IsRight = true;
-            }
-
-            if (p1IsRight || p2IsRight || p3IsRight) {
+            System.out.println("The first player thinks the number is " + p1.number);
+            if (p1.number == targetNumber) {
                 System.out.println("We have a winner!");
-                System.out.println("The first player won? " + p1IsRight);
-                System.out.println("The second player won? " + p2IsRight);
-                System.out.println("The third player won? " + p3IsRight);
-                System.out.println("The end.");
+                System.out.println("The first player wins.");
                 break;
-            } else {
-                System.out.println("Players should try again.");
             }
+            p2.guess();
+            System.out.println("The second player thinks the number is " + p2.number);
+            if (p2.number == targetNumber) {
+                System.out.println("We have a winner!");
+                System.out.println("The second player wins.");
+                break;
+            }
+            p3.guess();
+            System.out.println("The third player thinks the number is " + p3.number);
+            if (p3.number == targetNumber) {
+                System.out.println("We have a winner!");
+                System.out.println("The third player wins.");
+                break;
+            }
+            System.out.println("Players should try again.");
         }
     }
 }
