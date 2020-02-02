@@ -1,4 +1,4 @@
-package headfirst.chapter3.listings.l2;
+package headfirst.chapter4.listings.l2;
 
 public class ElectricGuitar {
     String brand;
