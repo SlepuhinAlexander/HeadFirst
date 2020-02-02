@@ -33,7 +33,7 @@ Your goal is to make a class that will compile, run and result in given output.
         void setArea() {
             ____ = (height * length) / 2d;
         } 
-
+    }
 
 **Expected output**
 
