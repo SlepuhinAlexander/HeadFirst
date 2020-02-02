@@ -10,6 +10,14 @@ public class Main {
     private void go() {
         int size = 27;
         String name = "Fido";
+        Dog myDog = new Dog(name, size);
+        int x = size - 5;
+        if (x < 15) {
+            myDog.bark();
+        }
+        while (x > 3) {
+            myDog.play();
+        }
 
         int[] numList = {2, 4, 6, 8};
         System.out.println("Hello");
@@ -28,6 +36,32 @@ public class Main {
     private void readTheFile(String path) throws FileNotFoundException {
         if (path == null) {
             throw new FileNotFoundException();
+        }
+    }
+
+    private static class Dog {
+        private String name;
+        private int size;
+
+        public String getName() {
+            return name;
+        }
+
+        public int getSize() {
+            return size;
+        }
+
+        public Dog(String name, int size) {
+            this.name = name;
+            this.size = size;
+        }
+
+        void bark() {
+            System.out.println("woof");
+        }
+
+        void play() {
+
         }
     }
 
