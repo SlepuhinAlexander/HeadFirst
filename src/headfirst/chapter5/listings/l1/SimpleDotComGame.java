@@ -11,7 +11,7 @@ public class SimpleDotComGame {
         theDotCom.setLocationCells(locations);
         boolean isAlive = true;
         while (isAlive) {
-            String guess = helper.getUserInput("Enter a number");
+            int guess = helper.getUserInput("Enter a number");
             String result = theDotCom.checkYourself(guess);
             numOfGuesses++;
             if (result.equals("Sank")) {

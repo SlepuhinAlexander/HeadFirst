@@ -5,18 +5,23 @@ import java.io.IOException;
 import java.io.InputStreamReader;
 
 public class GameHelper {
-    public String getUserInput(String prompt) {
-        String inputLine = null;
+    public int getUserInput(String prompt) {
+        int input = 0;
         System.out.print(prompt + " ");
         try {
             BufferedReader is = new BufferedReader(new InputStreamReader(System.in));
-            inputLine = is.readLine();
+            String inputLine = is.readLine();
             if (inputLine.length() == 0) {
-                return null;
+                System.out.println("Incorrect input");
+                return getUserInput(prompt);
             }
+            input = Integer.parseInt(inputLine);
         } catch (IOException e) {
             e.printStackTrace();
+        } catch (NumberFormatException e) {
+            System.out.println("Incorrect input");
+            return getUserInput(prompt);
         }
-        return inputLine;
+        return input;
     }
 }

@@ -8,8 +8,7 @@ public class SimpleDotCom {
         locationCells = locations;
     }
 
-    public String checkYourself(String stringGuess) {
-        int guess = Integer.parseInt(stringGuess);
+    public String checkYourself(int guess) {
         String result = "Miss";
         for (int cell : locationCells) {
             if (guess == cell) {

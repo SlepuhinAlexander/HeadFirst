@@ -6,7 +6,7 @@ public class SimpleDotComTestDrive {
         int[] locations = {2, 3, 4};
         dot.setLocationCells(locations);
 
-        String userGuess = "2";
+        int userGuess = 2;
         String testResult = "Failed";
         String result = dot.checkYourself(userGuess);
         if (result.equals("Hit")) {
