@@ -4,7 +4,7 @@ Here is some code in Java but a bit of it is missing.
 You should match the possible code blocks with corresponding results.
 Not all results must be used, some of them might be used several times.
 
-    Public class Mix4 {
+    class Mix4 {
         int counter = 0
         public static void main(String[] args) {
             int count = 0;
