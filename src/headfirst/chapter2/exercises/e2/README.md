@@ -1,6 +1,8 @@
 **Restore the code using magnets**
 
-You should use the given magnets with code blocks so that the program resulted in the given output. Each magnet can be used only once. Each magnet should be used. You can add as many braces as you want.  
+You should use the given magnets with code blocks so that the program resulted in the given output.
+Each magnet can be used only once. Each magnet should be used.
+You can add as many braces as you want.  
 
     d.playSnare();
 <!-- -->
