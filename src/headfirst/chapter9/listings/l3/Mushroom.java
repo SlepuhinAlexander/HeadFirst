@@ -1,4 +1,4 @@
-package headfirst.chapter9.listings.l2;
+package headfirst.chapter9.listings.l3;
 
 public class Mushroom {
     public Mushroom(int size) { }
