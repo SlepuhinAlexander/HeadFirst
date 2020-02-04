@@ -1,11 +1,10 @@
 package headfirst.chapter9.listings.l1;
 
-public class Duck {
+public class Duck extends Animal {
     int size;
 
-    public Duck(int duckSize) {
-        System.out.println("Quack");
-        size = duckSize;
-        System.out.println("Size equals " + size);
+    public Duck(int size) {
+        super();
+        this.size = size;
     }
 }
