@@ -39,8 +39,6 @@ Your goal is to make a class that will compile, run and result in given output.
         }
     }
 
-
-
 **Expected output**
 
     % java Puzzle4
