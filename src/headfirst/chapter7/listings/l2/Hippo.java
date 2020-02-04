@@ -7,7 +7,7 @@ public class Hippo extends Animal {
     }
 
     @Override
-    void eat() {
+    public void eat() {
         System.out.println("Hippo eats");
         if (hunger > 0) {
             hunger--;

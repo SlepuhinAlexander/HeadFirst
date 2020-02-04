@@ -15,7 +15,7 @@ public class Animal {
         System.out.println("Animal makes a noise");
     }
 
-    void eat() {
+    public void eat() {
         System.out.println("Animal eats");
         if (hunger > 0) {
             hunger--;
@@ -27,7 +27,7 @@ public class Animal {
         hunger++;
     }
 
-    void roam() {
+    public void roam() {
         System.out.println("Animal just wanders around");
         hunger++;
     }

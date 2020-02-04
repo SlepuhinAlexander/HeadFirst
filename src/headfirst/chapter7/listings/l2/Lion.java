@@ -7,7 +7,7 @@ public class Lion extends Feline {
     }
 
     @Override
-    void eat() {
+    public void eat() {
         System.out.println("Lion eats");
         if (hunger > 0) {
             hunger--;

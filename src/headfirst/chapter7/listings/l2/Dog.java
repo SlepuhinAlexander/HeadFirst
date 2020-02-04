@@ -7,7 +7,7 @@ public class Dog extends Canine {
     }
 
     @Override
-    void eat() {
+    public void eat() {
         System.out.println("Dog eats");
         if (hunger > 0) {
             hunger--;
