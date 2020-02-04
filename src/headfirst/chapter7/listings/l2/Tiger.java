@@ -1,6 +1,6 @@
 package headfirst.chapter7.listings.l2;
 
-public class Tiger extends Animal {
+public class Tiger extends Feline {
     @Override
     void makeNoise() {
         System.out.println("Tiger meows");
