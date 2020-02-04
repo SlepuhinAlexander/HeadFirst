@@ -3,11 +3,9 @@ package headfirst.chapter9.listings.l1;
 public class Duck {
     int size;
 
-    public Duck() {
+    public Duck(int duckSize) {
         System.out.println("Quack");
-    }
-
-    public void setSize(int newSize) {
-        size = newSize;
+        size = duckSize;
+        System.out.println("Size equals " + size);
     }
 }
