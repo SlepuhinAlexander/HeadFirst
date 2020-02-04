@@ -2,7 +2,7 @@ package headfirst.chapter7.listings.l2;
 
 public class Dog extends Canine {
     @Override
-    void makeNoise() {
+    public void makeNoise() {
         System.out.println("Dog barks");
     }
 

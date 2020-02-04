@@ -11,7 +11,7 @@ public class Animal {
     Dimension boundaries;
     Point location;
 
-    void makeNoise() {
+    public void makeNoise() {
         System.out.println("Animal makes a noise");
     }
 
