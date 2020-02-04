@@ -1,6 +1,6 @@
 package headfirst.chapter8.listings.l1;
 
-public class Cat extends Feline {
+public class Cat extends Feline implements Pet {
     @Override
     public void makeNoise() {
         System.out.println("Cat purrs");
@@ -12,5 +12,16 @@ public class Cat extends Feline {
         if (hunger > 0) {
             hunger--;
         }
+    }
+
+    @Override
+    public void beFriendly() {
+        System.out.println("Cat is friendly");
+    }
+
+    @Override
+    public void play() {
+        System.out.println("Cat likes to play");
+        makeNoise();
     }
 }
