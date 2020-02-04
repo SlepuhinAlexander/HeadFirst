@@ -4,13 +4,33 @@ import headfirst.chapter8.listings.l1.Animal;
 
 public class MyAnimalList {
     private Animal[] animals = new Animal[5];
-    private int nextIndex;
 
-    public void add(Animal a) {
-        if (nextIndex < animals.length) {
-            animals[nextIndex] = a;
-            System.out.println("Animal added to cell " + nextIndex);
-            nextIndex++;
+    public boolean add(Animal a) {
+        int index = findFreeIndex();
+        if (index >= 0) {
+            animals[index] = a;
+            System.out.println("Animal added to cell " + index);
+            return true;
+        } else {
+            return false;
         }
+    }
+
+    public boolean remove(int index) {
+        if (index >= 0 && index < animals.length) {
+            animals[index] = null;
+            return true;
+        } else {
+            return false;
+        }
+    }
+
+    private int findFreeIndex() {
+        for (int i = 0; i < animals.length; i++) {
+            if (animals[i] == null) {
+                return i;
+            }
+        }
+        return -1;
     }
 }
