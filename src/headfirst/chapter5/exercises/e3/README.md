@@ -21,6 +21,7 @@ Not all results must be used, some of them might be used several times.
             }
             System.out.println(x + " " + y);
         }
+    }
 
 **Possible code blocks:**
 
