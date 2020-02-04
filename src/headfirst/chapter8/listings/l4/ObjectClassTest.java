@@ -15,11 +15,7 @@ public class ObjectClassTest {
     public void equalsMethodTest() {
         Dog a = new Dog();
         Cat c = new Cat();
-        if (a.equals(c)) {
-            System.out.println("They are equal");
-        } else {
-            System.out.println("They are not equal");
-        }
+        System.out.println(a.equals(c));
     }
 
     public void getClassMethodTest() {
@@ -35,5 +31,6 @@ public class ObjectClassTest {
     public void toStringMethodTest() {
         Cat c = new Cat();
         System.out.println(c.toString());
+        System.out.println(c);              // println(c) is the same as println(c.toString());
     }
 }
