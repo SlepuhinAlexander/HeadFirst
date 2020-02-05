@@ -5,10 +5,12 @@ public class Foo {
         Laundry laundry = new Laundry();
         try {
             laundry.doLaundry();
-        } catch (PantsException e) {
-            System.out.println("PantsException");
+        } catch (TeeShirtException e) {
+            System.out.println("TeeShirtException");
         } catch (LingerieException e) {
             System.out.println("LingerieException");
+        } catch (ClothingException e) {
+            System.out.println("ClothingException");
         }
     }
 
