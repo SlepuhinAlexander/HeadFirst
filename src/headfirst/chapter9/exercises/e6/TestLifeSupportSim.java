@@ -20,7 +20,7 @@
 * and calling it (automatically) from V3Radiator constructor.
 *  */
 
-package headfirst.chapter9.exercise.e6;
+package headfirst.chapter9.exercises.e6;
 
 import java.util.ArrayList;
 

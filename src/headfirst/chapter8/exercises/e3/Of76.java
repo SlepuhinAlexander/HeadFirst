@@ -1,4 +1,4 @@
-package headfirst.chapter8.exercise.e3;
+package headfirst.chapter8.exercises.e3;
 
 interface Nose {
     public int iMethod();
