@@ -22,9 +22,12 @@ public class SimpleGui1F {
 class MyDrawPanelE extends JPanel {
     @Override
     protected void paintComponent(Graphics g) {
+        Dimension size = new Dimension(150, 150);
+        Point location = new Point((this.getWidth() - size.width) / 2, (this.getHeight() - size.height) / 2);
         Graphics2D g2d = ((Graphics2D) g);
-        GradientPaint gradient = new GradientPaint(75, 75, Color.BLUE, 225, 225, Color.ORANGE);
+        GradientPaint gradient = new GradientPaint(location, Color.BLUE, new Point(location.x + size.width,
+                location.y + size.height), Color.ORANGE);
         g2d.setPaint(gradient);
-        g2d.fillOval(75,75,150,150);
+        g2d.fillOval(location.x, location.y, size.width, size.height);
     }
 }
