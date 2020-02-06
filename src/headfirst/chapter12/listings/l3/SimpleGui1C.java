@@ -10,7 +10,7 @@ public class SimpleGui1C {
     }
 
     public void go() {
-        JFrame frame = new JFrame();
+        JFrame frame = new JFrame("Orange rectangular");
         frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         frame.setLocation(800, 400);
         frame.setSize(300, 300);

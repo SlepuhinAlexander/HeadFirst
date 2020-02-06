@@ -13,7 +13,7 @@ public class SimpleGui1B implements ActionListener {
     }
 
     public void go() {
-        JFrame frame = new JFrame();
+        JFrame frame = new JFrame("Button clicker");
         button = new JButton("Click me!");
         button.addActionListener(this);
         frame.getContentPane().add(button);
