@@ -12,6 +12,7 @@ public class Button1 {
     public void go() {
         JFrame frame = new JFrame();
         JButton button = new JButton("There is no spoon...");
+        button.setFont(new Font("serif", Font.BOLD, 28));
         frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         frame.getContentPane().add(BorderLayout.NORTH, button);
         frame.setBounds(800, 400, 300, 300);
