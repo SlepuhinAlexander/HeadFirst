@@ -15,7 +15,9 @@ public class Panel1 {
         JPanel panel = new JPanel();
         panel.setBackground(Color.DARK_GRAY);
         JButton button = new JButton("shock me");
+        JButton buttonTwo = new JButton("bliss");
         panel.add(button);
+        panel.add(buttonTwo);
         frame.getContentPane().add(BorderLayout.EAST,panel);
         frame.setBounds(800, 400, 300, 300);
         frame.setVisible(true);
