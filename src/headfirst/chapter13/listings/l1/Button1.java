@@ -11,9 +11,9 @@ public class Button1 {
 
     public void go() {
         JFrame frame = new JFrame();
-        JButton button = new JButton("Click like you mean it");
+        JButton button = new JButton("There is no spoon...");
         frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-        frame.getContentPane().add(BorderLayout.EAST, button);
+        frame.getContentPane().add(BorderLayout.NORTH, button);
         frame.setBounds(800, 400, 300, 300);
         frame.setVisible(true);
     }
