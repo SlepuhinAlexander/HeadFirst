@@ -1,4 +1,4 @@
-package headfirst.chapter13.listings.l1;
+package headfirst.chapter13.listings.l2;
 
 import javax.swing.*;
 import java.awt.*;
