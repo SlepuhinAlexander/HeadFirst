@@ -14,6 +14,8 @@ public class Panel1 {
         frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         JPanel panel = new JPanel();
         panel.setBackground(Color.DARK_GRAY);
+        JButton button = new JButton("shock me");
+        panel.add(button);
         frame.getContentPane().add(BorderLayout.EAST,panel);
         frame.setBounds(800, 400, 300, 300);
         frame.setVisible(true);
