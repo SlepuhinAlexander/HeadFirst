@@ -1,7 +1,9 @@
 package headfirst.chapter16.listings.l1;
 
+import java.awt.*;
 import java.io.*;
 import java.util.ArrayList;
+import java.util.Collections;
 
 public class Jukebox1 {
     public static final String PATH = System.getProperty("java.class.path") + "/" +
@@ -14,6 +16,8 @@ public class Jukebox1 {
 
     public void go() {
         getSongs();
+        System.out.println(songList);
+        Collections.sort(songList);
         System.out.println(songList);
     }
 
