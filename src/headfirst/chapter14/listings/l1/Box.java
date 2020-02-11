@@ -14,7 +14,7 @@ public class Box implements Serializable {
         try {
             String path = System.getProperty("java.class.path") + "/";
             path += Box.class.getPackageName().replace('.', '/');
-            path += "/box.ser";
+            path += "/Box.ser";
             FileOutputStream fs = new FileOutputStream(new File(path));
             ObjectOutputStream os = new ObjectOutputStream(fs);
             os.writeObject(myBox);
